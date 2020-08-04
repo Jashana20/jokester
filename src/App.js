@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import JokeContainer from './components/JokeContainer'
+import 'semantic-ui-css/semantic.min.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+
+
+  state = {
+    tenRandomJokes : []
+  }
+
+  componentDidMount(){
+      fetch("https://official-joke-api.appspot.com/random_ten")
+      .then(res => res.json())
+      .then(json => this.setState({ tenRandomJokes: json }))
+      // .then(res => console.log(res))
+  } 
+
+  render(){
+    return (
+      <JokeContainer jokes={this.state.tenRandomJokes} />
+    )
+  }
 }
 
 export default App;
