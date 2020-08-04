@@ -6,15 +6,16 @@ class JokeCard extends React.Component{
 
     state = {
         likes: false,
-        dislikes: false
+        dislikes: false,
+        buttonClicked: true
     }
 
     increaseLikes = () => {
-        this.setState({likes: !this.state.likes})
+        this.setState({likes: !this.state.likes, dislikes: false})
     }
 
     increaseDislikes = () => {
-        this.setState({dislikes: !this.state.dislikes})
+        this.setState({dislikes: !this.state.dislikes, likes: false})
     }
 
     render(){
