@@ -36,10 +36,10 @@ class JokeCard extends React.Component{
                 <div className="card" style={cardColor}>
                 <h2>{setup}</h2>
                 <h3>{punchline}</h3>
-                {likes ? <button style={likedColour} className="ui left floated button" onClick={this.increaseLikes}>:)</button>
-                : <button style={buttonColour} className="ui left floated button" onClick={this.increaseLikes}>:)</button>}
-                {dislikes ? <button style={dislikedColour} className="ui right floated button" onClick={this.increaseDislikes}>:(</button>
-                : <button style={buttonColour} className="ui right floated button" onClick={this.increaseDislikes}>:(</button>}
+                {dislikes ? <button style={dislikedColour} className="ui left floated button" onClick={this.increaseDislikes}>:(</button>
+                : <button style={buttonColour} className="ui left floated button" onClick={this.increaseDislikes}>:(</button>}
+                {likes ? <button style={likedColour} className="ui right floated button" onClick={this.increaseLikes}>:)</button>
+                : <button style={buttonColour} className="ui right floated button" onClick={this.increaseLikes}>:)</button>}
             </div>
             </div>
         )
