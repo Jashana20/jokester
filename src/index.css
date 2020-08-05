@@ -41,7 +41,11 @@ code {
 } 
 
 #button {
-  border-radius: 24px;
+  border-radius: 22px;
   height:60px;
   width:60px;
+}
+
+.punchline {
+  font-weight: normal
 }

@@ -36,15 +36,23 @@ class JokeCard extends React.Component{
             <div className="cards">
                 <div className="card" style={cardColor}>
                 <h2>{setup}</h2>
-                <h3>{punchline}</h3>
+                <h2 className="punchline">{punchline}</h2>
                 {dislikes ? 
-                <button style={dislikedColour} id="button" className="ui left floated button" onClick={this.increaseDislikes}><img className="icon" src="./images/frown.png" alt=""/></button>
+                <button style={dislikedColour} id="button" className="ui left floated button" onClick={this.increaseDislikes}>
+                <img className="icon" src="./images/frown.png" alt=""/>
+                </button>
                 : 
-                <button style={buttonColour} id="button" className="ui left floated button" onClick={this.increaseDislikes}><img className="icon"  src="./images/frown.png" alt=""/></button>}
+                <button style={buttonColour} id="button" className="ui left floated button" onClick={this.increaseDislikes}>
+                <img className="icon"  src="./images/frown.png" alt=""/>
+                </button>}
                 {likes ? 
-                <button style={likedColour} id="button" className="ui right floated button" onClick={this.increaseLikes}><img className="icon" src="./images/small-smile.png" alt=""/></button>
+                <button style={likedColour} id="button" className="ui right floated button" onClick={this.increaseLikes}>
+                <img className="icon" src="./images/small-smile.png" alt=""/>
+                </button>
                 : 
-                <button style={buttonColour} id="button" className="ui right floated button" onClick={this.increaseLikes}><img className="icon" src="./images/small-smile.png" alt=""/></button>}
+                <button style={buttonColour} id="button" className="ui right floated button" onClick={this.increaseLikes}>
+                <img className="icon" src="./images/small-smile.png" alt=""/>
+                </button>}
             </div>
             </div>
         )
