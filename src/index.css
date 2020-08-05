@@ -16,6 +16,10 @@ code {
   text-align: center;
 }
 
+.icon {
+  line-height: 50%;
+}
+
 .row {
   margin: 0 -5px;
 }
@@ -26,7 +30,7 @@ code {
 }
   
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
   padding: 16px;
   text-align: center;
   background-color: #dbf1f0;
@@ -35,3 +39,9 @@ code {
   height: 250px;
   width: 100%;
 } 
+
+#button {
+  border-radius: 24px;
+  height:60px;
+  width:60px;
+}

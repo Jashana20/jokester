@@ -1,5 +1,6 @@
 import React from 'react'
 import 'semantic-ui-css/semantic.min.css'
+import '../index.css'
 
 
 class JokeCard extends React.Component{
@@ -37,13 +38,13 @@ class JokeCard extends React.Component{
                 <h2>{setup}</h2>
                 <h3>{punchline}</h3>
                 {dislikes ? 
-                <button style={dislikedColour} className="ui left floated button" onClick={this.increaseDislikes}><img src="./images/frown.png" alt=""/></button>
+                <button style={dislikedColour} id="button" className="ui left floated button" onClick={this.increaseDislikes}><img className="icon" src="./images/frown.png" alt=""/></button>
                 : 
-                <button style={buttonColour} className="ui left floated button" onClick={this.increaseDislikes}><img src="./images/frown.png" alt=""/></button>}
+                <button style={buttonColour} id="button" className="ui left floated button" onClick={this.increaseDislikes}><img className="icon"  src="./images/frown.png" alt=""/></button>}
                 {likes ? 
-                <button style={likedColour} className="ui right floated button" onClick={this.increaseLikes}><img src="./images/small-smile.png" alt=""/></button>
+                <button style={likedColour} id="button" className="ui right floated button" onClick={this.increaseLikes}><img className="icon" src="./images/small-smile.png" alt=""/></button>
                 : 
-                <button style={buttonColour} className="ui right floated button" onClick={this.increaseLikes}><img src="./images/small-smile.png" alt=""/></button>}
+                <button style={buttonColour} id="button" className="ui right floated button" onClick={this.increaseLikes}><img className="icon" src="./images/small-smile.png" alt=""/></button>}
             </div>
             </div>
         )
