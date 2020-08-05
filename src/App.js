@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import JokeContainer from './components/JokeContainer'
 import 'semantic-ui-css/semantic.min.css'
+import './index.css'
 
 class App extends React.Component{
 
@@ -19,7 +20,11 @@ class App extends React.Component{
 
   render(){
     return (
-      <JokeContainer jokes={this.state.tenRandomJokes} />
+      <div className="center">
+        <br />
+        <img src="/images/smile.png" alt=""/>
+        <JokeContainer jokes={this.state.tenRandomJokes} />
+      </div>
     )
   }
 }
