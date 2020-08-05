@@ -12,3 +12,26 @@ code {
     monospace;
 }
 
+.center {
+  text-align: center;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.cards {
+  grid-gap: 1rem;
+  margin: 1rem 2rem;
+}
+  
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #dbf1f0;
+  list-style: none;
+  padding-top: 35px;
+  height: 250px;
+  width: 100%;
+} 

@@ -10,11 +10,17 @@ class JokeCard extends React.Component{
     }
 
     increaseLikes = () => {
-        this.setState({likes: !this.state.likes, dislikes: false})
+        this.setState({
+            likes: !this.state.likes, 
+            dislikes: false
+        })
     }
 
     increaseDislikes = () => {
-        this.setState({dislikes: !this.state.dislikes, likes: false})
+        this.setState({
+            dislikes: !this.state.dislikes, 
+            likes: false
+        })
     }
 
     render(){
@@ -26,7 +32,7 @@ class JokeCard extends React.Component{
         const cardColor = {backgroundColor: '#FFE6E2'}
 
         return (
-            <div className="ui cards">
+            <div className="cards">
                 <div className="card" style={cardColor}>
                 <h2>{setup}</h2>
                 <h3>{punchline}</h3>
